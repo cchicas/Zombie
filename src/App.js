@@ -9,8 +9,29 @@ function App() {
     <>
       <Router>
         <Navbar />
+          <div>
+            <ul>
+              <li>
+                <Link to "/">Home</Link>
+              </li>
+              <li>
+                <Link to=
+              </li>
+            </ul>
+          </div>          
           <Switch>
-            <Route path='/' exact component={Home} />
+            <Route path='/'>
+              <Home />
+            </Route>
+            <Route path='/sign-up'>
+              <SignUp />
+            </Route>
+            <Route path='/tracker'>
+              <Tracker />
+            </Route>
+            <Route path='login'>
+              <Login />
+            </Route>              
           </Switch>
       </Router>
     </>
